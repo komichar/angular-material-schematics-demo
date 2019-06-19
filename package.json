@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:pages": "ng build --prod --aot --base-href /angular-material-schematics-demo/",
+    "deploy:pages": "npx ngh --dir=dist/something",
+    "pages": "npm run build:pages && npm run deploy:pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
